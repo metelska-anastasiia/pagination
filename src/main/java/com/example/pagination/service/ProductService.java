@@ -12,7 +12,5 @@ public interface ProductService {
 
     List<ProductDto> findAll(Pageable pageable);
 
-    List<ProductDto> findAllByName(String name);
-
     void deleteById(Long id);
 }

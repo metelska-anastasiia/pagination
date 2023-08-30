@@ -37,13 +37,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<ProductDto> findAllByName(String name) {
-        return productRepository.findAllByNameContainingIgnoreCase(name).stream()
-                .map(productMapper::toDto)
-                .toList();
-    }
-
-    @Override
     public void deleteById(Long id) {
         productRepository.deleteById(id);
     }

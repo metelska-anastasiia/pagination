@@ -34,11 +34,6 @@ public class ProductController {
         return productService.findById(id);
     }
 
-    @GetMapping("/by-name")
-    public List<ProductDto> findAllByName(@RequestParam String name) {
-        return productService.findAllByName(name);
-    }
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ProductDto create(@RequestBody @Valid CreateProductRequestDto requestDto) {
