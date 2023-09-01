@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: AnastasiiaMetelska
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: "bob@i.ua"}
+              - column: {name: password, value: "123456789QWErty"}
+              - column: {name: role_id, valueNumeric: 1}
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: "alice@i.ua"}
+              - column: {name: password, value: "Alice123"}
+              - column: {name: role_id, valueNumeric: 1}
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: "john@i.ua"}
+              - column: {name: password, value: "John12345"}
+              - column: {name: role_id, valueNumeric: 2}

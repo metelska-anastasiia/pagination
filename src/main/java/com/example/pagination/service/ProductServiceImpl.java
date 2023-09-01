@@ -6,9 +6,9 @@ import com.example.pagination.mapper.ProductMapper;
 import com.example.pagination.model.Product;
 import com.example.pagination.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
-import java.awt.print.Pageable;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
